@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - LinkedInPowerMsg</title>
+    <style>
+        :root {
+            --primary-color: #0073b1;
+            --text-color: #333;
+            --bg-color: #f3f2ef;
+            --card-bg: #ffffff;
+        }
+        body {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        h1 { color: var(--primary-color); border-bottom: 2px solid #eee; padding-bottom: 10px; font-size: 28px; }
+        h2 { color: #004182; margin-top: 30px; font-size: 22px; border-left: 4px solid var(--primary-color); padding-left: 15px; }
+        h3 { color: #555; font-size: 18px; }
+        p, li { margin-bottom: 15px; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 15px; }
+        th, td { text-align: left; padding: 12px; border: 1px solid #e0e0e0; }
+        th { background-color: #f9f9f9; font-weight: 600; }
+        .contact-box { background: #f0f7ff; padding: 25px; border-radius: 8px; border: 1px solid #d0e3ff; margin-top: 30px; }
+        .footer { text-align: center; margin-top: 40px; font-size: 14px; color: #777; }
+        strong { color: #000; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Privacy Policy — LinkedInPowerMsg by ScouterZero</h1>
+    <p><strong>Last updated:</strong> March 10, 2026</p>
+
+    <section>
+        <h2>1. Overview</h2>
+        <p>LinkedInPowerMsg ("the Extension") is a Chrome browser extension developed by <strong>ScouterZero</strong>. This Privacy Policy explains what data the Extension collects, how it is used, and your rights regarding that data. We are committed to a "Local-First" approach to privacy.</p>
+        <p>By installing and using the Extension, you agree to the terms described in this policy.</p>
+    </section>
+
+    <section>
+        <h2>2. Data We Do NOT Collect (Local-First Privacy)</h2>
+        <p>The core functionality of LinkedInPowerMsg operates entirely on your device. The following data is <strong>never transmitted to any external server</strong> during normal use:</p>
+        <ul>
+            <li><strong>LinkedIn Content:</strong> Your message content, profile information, connections, or activity.</li>
+            <li><strong>User Assets:</strong> Your saved message snippets, labels, shortcut keys, and file attachments.</li>
+            <li><strong>Browsing History:</strong> We do not track your activity on any website outside of LinkedIn.</li>
+        </ul>
+        <p>All snippets and attachments are stored locally using <code>chrome.storage.local</code> and never leave your browser.</p>
+    </section>
+
+    <section>
+        <h2>3. Data We Collect — Waitlist Sign-Up (Optional)</h2>
+        <p>To help us transition to a sustainable model, the Extension includes a usage limit. When you voluntarily join the early-access waitlist (displayed after reaching the usage limit), the following information is collected:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Data Point</th>
+                    <th>Purpose</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Email Address</strong></td>
+                    <td>To notify you regarding the launch of our paid plans and product updates.</td>
+                </tr>
+                <tr>
+                    <td><strong>Feedback Text</strong></td>
+                    <td>Optional; used to improve product features and user experience.</td>
+                </tr>
+                <tr>
+                    <td><strong>Submission Metadata</strong></td>
+                    <td>Timestamp and consent flag to manage waitlist order and compliance.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Data Transmission & Disclosure</h3>
+        <p>When you explicitly click "Join Waitlist," your data is sent via an HTTPS POST request to a Google Apps Script endpoint. This data is stored in a private Google Sheet accessible only to the ScouterZero development team.</p>
+        <p><strong>Note:</strong> The Extension will <strong>never</strong> collect your email address automatically. It requires your active input and submission.</p>
+    </section>
+
+    <section>
+        <h2>4. Third-Party Services</h2>
+        <p>We use <strong>Google Apps Script</strong> (Google LLC) to process waitlist submissions. No other third-party analytics, advertising networks, or tracking tools are used.</p>
+        <p><a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></p>
+    </section>
+
+    <section>
+        <h2>5. Data Storage & Retention</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Data Type</th>
+                    <th>Location</th>
+                    <th>Retention Period</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Local Extension Data</td>
+                    <td><code>chrome.storage.local</code></td>
+                    <td>Until uninstalled or manually cleared.</td>
+                </tr>
+                <tr>
+                    <td>Waitlist Information</td>
+                    <td>Google Sheets (Private)</td>
+                    <td>Until product launch or upon deletion request.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>6. Permissions Justification</h2>
+        <p>In compliance with the Chrome Web Store's "Minimum Permission" policy, we use:</p>
+        <ul>
+            <li><strong>storage & unlimitedStorage:</strong> To save your templates and large base64-encoded attachments locally on your machine.</li>
+            <li><strong>host_permissions (script.google.com):</strong> Specifically to allow the optional waitlist form to reach our database.</li>
+            <li><strong>linkedin.com:</strong> The content script runs only on LinkedIn to provide messaging shortcuts.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>7. Your Rights & Data Deletion</h2>
+        <p>You have the right to access or delete any personal information we hold.</p>
+        <ul>
+            <li><strong>To delete local data:</strong> Simply uninstall the extension or clear your browser storage.</li>
+            <li><strong>To delete waitlist data:</strong> If you provided your email and wish to be removed from our records, please contact us.</li>
+        </ul>
+    </section>
+
+    <div class="contact-box">
+        <h2>8. Contact & Data Requests</h2>
+        <p>If you have any questions or wish to exercise your data rights, please reach out:</p>
+        <p><strong>Developer:</strong> Aniket<br>
+           <strong>Website:</strong> <a href="https://scouterzero.com">scouterzero.com</a><br>
+           <strong>Email:</strong> <a href="mailto:mehareac@gmail.com">mehareac@gmail.com</a></p>
+    </div>
+
+    <section>
+        <h2>9. Children's Privacy</h2>
+        <p>The Extension is not directed at children under the age of 13. If you believe a child has submitted an email, contact us for immediate deletion.</p>
+    </section>
+
+    <div class="footer">
+        &copy; 2026 ScouterZero. All rights reserved.
+    </div>
+</div>
+
+</body>
+</html>
